@@ -1,0 +1,73 @@
+/* Contenedor principal */
+.birds-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    min-height: 100vh; /* Asegura que el contenedor ocupe al menos el 100% de la altura de la pantalla */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Lista de aves */
+  .birds-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra las tarjetas de las aves */
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho máximo en pantallas grandes */
+    margin-top: 20px;
+  }
+  
+  /* Tarjeta de ave */
+  .bird-card {
+    background-color: #f1f1f1;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  /* Información de la ave */
+  .bird-info p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  /* Botón para reproducir sonido */
+  .play-sound {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .play-sound:hover {
+    background-color: #45a049;
+  }
+  
+  /* Carga de datos */
+  .loading {
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .birds-list {
+      width: 100%;
+    }
+  
+    .bird-card {
+      width: 90%;
+    }
+  }
+  
